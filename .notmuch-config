@@ -1,0 +1,17 @@
+[database]
+path=/home/stshine/Mail/
+
+[user]
+name=Pu Xingyu
+primary_email=pu.stshine@gmail.com
+
+# [new]
+# tags=inbox;
+# ignore=
+
+[search]
+exclude_tags=deleted;spam;
+
+
+[maildir]
+synchronize_flags=true
