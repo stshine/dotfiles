@@ -12,28 +12,31 @@ Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'overcache/NeoSolarized'
+Plug 'morhetz/gruvbox'
 Plug 'godlygeek/tabular'
 
 "Navigation===================
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'preservim/nerdtree'
+Plug 'easymotion/vim-easymotion'
 
 "Code===========================
 Plug 'sheerun/vim-polyglot'
-Plug 'scrooloose/nerdcommenter'
+"Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 
 "Completion=====================
 Plug 'neoclide/coc.nvim', { 'branch' : 'release' }
 
 call plug#end()
 
-set nocompatible
-
 let mapleader = "\<space>"
 
 set number
+
+nmap <Leader>s <Plug>(easymotion-s2)
 
 " don't show the help in normal mode
 let g:Lf_HideHelp = 1
@@ -119,5 +122,5 @@ if has("termguicolors")
 	set termguicolors
 endif
 
-set background=light
-colorscheme NeoSolarized
+" set background=light
+colorscheme gruvbox
